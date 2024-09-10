@@ -2,9 +2,9 @@
 using namespace std;
 
 int main() {
-    char ch[8] = "weLCoMe";
+    char ch[] = "weLCoMe";
 
-    for(int i=0; i<8; i++) {
+    for(int i=0; ch[i]!='\0'; i++) {
         if(ch[i] >= 65 && ch[i] <= 90) {
             ch[i] += 32;
         } else if(ch[i] >= 97 && ch[i] <= 122) {
@@ -13,4 +13,6 @@ int main() {
     }
 
     cout<<"After changing case: "<<ch;
+
+    return 0;
 }
